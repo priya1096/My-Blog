@@ -1,0 +1,141 @@
+<html>
+<style>
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+
+    }
+
+    * {
+        box-sizing: border-box
+    }
+
+    input[type=text],
+    input[type=password] {
+        width: 100%;
+        padding: 12px;
+        margin: 5px 0 22px 0;
+        display: inline-block;
+        border: none;
+        background: #f8f3f3;
+    }
+
+    ​ input[type=text]:focus,
+    input[type=password]:focus {
+        background-color: #ddd;
+        outline: none;
+    }
+
+    h1 {
+        background: #25ced1;
+        color: #ffffff;
+        text-align: center;
+        padding: 12px 14px;
+    }
+
+    ​ hr {
+        border: 1px solid #f1f1f1;
+        margin-bottom: 25px;
+    }
+
+    button {
+        background-color: #d7263d;
+        color: white;
+        padding: 12px 18px;
+        margin: 8px 0;
+        border: none;
+        cursor: pointer;
+        width: 100%;
+        opacity: 0.9;
+    }
+
+    ​ button:hover {
+        opacity: 1;
+    }
+
+    .container {
+        padding: 10px;
+    }
+
+    .header {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #ffffff;
+    }
+
+    li {
+        float: left;
+    }
+
+    li a {
+        display: block;
+        color: black;
+        text-align: center;
+        font-size: 25px;
+        padding: 18px 18px;
+        text-decoration: none;
+    }
+
+    li a:hover {
+        background-color: #e9e8e8;
+    }
+
+    .right-links {
+        position: relative;
+        float: right;
+    }
+</style>
+<div class="header">
+    <div class="left-links">
+        <li>
+            <a class="active" href="#home">Home</a>
+        </li>
+        <li>
+            <a href="#profile">Profile</a>
+        </li>
+        <li>
+            <a href="#contact">Contact</a>
+        </li>
+    </div>
+
+    <div class="right-links">
+        <li>
+            <a href="SignIn.html">SignIn</a>
+        </li>
+        <li>
+            <a href="SignUp.html">SignUp</a>
+        </li>
+    </div>
+</div>
+​
+<form action="/action_page.php" style="border:1px solid rgb(202, 189, 189)">
+    <div class="container">
+        <h1>Login</h1>
+        <p>Enter your Email and Password</p>
+        <hr> ​
+        <label for="email">
+            <b>Email</b>
+        </label>
+        <input type="text" placeholder="Enter Email" name="email" required> ​
+        <label for="psw">
+            <b>Password</b>
+        </label>
+        <input type="password" placeholder="Enter Password" name="psw" required> ​
+        <label>
+            <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Forget Password
+        </label>
+
+        <div class="clearfix">
+            <a href="#" style="color:rgb(46, 127, 209)">Terms & Privacy</a>. ​
+            <div class="clearfix">
+                <button type="submit" class="signupbtn">Sign In</button>
+            </div>
+        </div>
+    </div>
+</form>
+​
+</body>
+
+</html>
+​
